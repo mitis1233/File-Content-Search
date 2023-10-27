@@ -33,6 +33,7 @@ def search_in_file(file_path):
         print(f"Error reading {file_path}: {e}")
 
 # 使用多執行緒池
+#with concurrent.futures.ThreadPoolExecutor(max_workers=min(32, os.cpu_count() + 4)) as executor:
 with concurrent.futures.ThreadPoolExecutor() as executor:
     for root, dirs, files in os.walk(folder_path):
         for file in files:
