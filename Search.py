@@ -1,10 +1,10 @@
 import os
 import concurrent.futures
 # 指定要搜尋的文件夾路徑
-folder_path = "D:\文件夾路徑"
+folder_path = input(u'輸入文件夾路徑:')
 
 # 要搜索的關鍵字
-search_keyword = "搜索的關鍵字"
+search_keyword = input(u'輸入搜索的關鍵字:')
 
 # 用於儲存包含關鍵字的檔案名的列表
 matching_files = []
